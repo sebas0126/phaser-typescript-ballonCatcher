@@ -1,12 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Game</title>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    <div>
-        <div id="content"></div>
-    </div>
+	<div>
+		<div id="content">
+			<div id="menu">
+				<img src="assets/img/confetti3.png" class="decoration">
+				<img src="assets/img/logo-aniversary.png" alt="">
+				<div class="message">
+					Anímate, participa por un iPhone y miles de puntos con el programa Somos del Grupo EPM
+				</div>
+				<button class="btnInit" type="button">Comienza a jugar</button>
+				<br>
+				<button id="btnGuide" type="button">¿Cómo jugar?</button>
+				<br>
+				<button class="terms" type="button">Conoce términos y condiciones</button>
+				<br>
+			</div>
+			<div id="instructions" style="display: none">
+				<img src="assets/img/example.png" alt="">
+				<img src="assets/img/confetti4.png" class="decoration">
+				<div class="message">
+					El juego consiste en lograr estallar en el menor tiempo posible la mayor cantidad de globos para ganar un Iphone 7 o mil
+					paquetes de 5.000 puntos Somos. (puedes jugar las veces que quieras)
+					<br>
+					<br> Vigencia: del 18 de octubre a las 10:00 a.m. al 25 de octubre a las 11:59 p.m.
+				</div>
+				<button class="btnInit" type="button">Comienza a jugar</button>
+				<button class="terms" type="button">Conoce términos y condiciones</button>
+			</div>
+			<div id="score" style="display: none">
+				<img src="assets/img/confetti5.png" class="decoration">
+				<div class="head">
+					<h1>15</h1>
+					<p>Globos en total</p>
+				</div>
+				<table class="player">
+					<tr>
+						<th>Posicion</th>
+						<th>Nombre</th>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>Sebastian Vasquez</td>
+					</tr>
+				</table>
+				<button id="btnRestart" type="button">VOLVER A JUGAR</button>
+				<button id="btnTop" type="button">Ver ranking ganadores</button>
+				<button class="terms" type="button">Conoce términos y condiciones</button>
+			</div>
+			<div id="top" style="display: none">
+				<img src="assets/img/cup.png" alt="">
+				<h2>Ranking ganadores</h2>
+				<div class="scroll">
+					<table cellspacing="0">
+						<tr>
+							<th># Nombre</th>
+							<th>Cantidad</th>
+							<th>Tiempo</th>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr>
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+						<tr class="win">
+							<td>1. Jesica Lopez</td>
+							<td>12</td>
+							<td>00:24</td>
+						</tr>
+					</table>
+				</div>
+				<button class="btnClose" type="button">&#x2715;</button>
+			</div>
+			<div id="tyc" style="display: none">
+				<img src="assets/img/confetti3.png" class="decoration">
+				<h1>TÉRMINOS Y CONDICIONES </h1>
+				<h3>“Actualiza tus datos en www.somosgrupoepm.com y gana premios” 10/2017</h3>
+				<div class="message">
+					EMPRESAS PÚBLICAS DE MEDELLÍN E.S.P. (en adelante EPM) presenta a continuación los términos y condiciones que rigen el juego
+					“Actualiza tus datos en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a> y gana premios” el cual se llevará a cabo para hacer entrega de 1001 premios
+					a los clientes inscritos al programa Somos del Grupo EPM.
+					<br>
+					<br> La participación en el juego “Actualiza tus datos en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a> y gana premios” implica el pleno conocimiento
+					y aceptación de los términos y condiciones que se definen a continuación:
+					<h3>Vigencia del juego:</h3>
+					del miércoles 18 de octubre a las 10:00 am al miércoles 25 de octubre a las 11:59 pm.
+					<h3>Quienes pueden participar:</h3>
+					clientes inscritos al programa Somos del Grupo EPM que actualicen sus datos personales y tengan un correo electrónico valido.
+					No pueden participar ni podrán ser ganadores, los servidores de EPM que hagan parte de la Unidad Fidelización, ni los
+					empleados de Multisponsor S.A.S que hagan parte de la operación del programa Somos del Grupo EPM.
+					<h3>Premios:</h3>
+					<ol>
+						<li>
+							<strong>
+								<u>Un (1) iPhone 7:</u>
+							</strong>
+							Pantalla retina HD de 4.7 pulgadas. Sistema operativo iOS 10, Chip A10 fusión de 64 bits y coprocesador de movimiento M10
+							integrado. Cámara principal de 12MP con flash Quad-LED True Tone, autoenfoque y fotos panorámicas. Cámara frontal
+							de 7MP. Video 4K, video en cámara lenta y rápida. Memoria interna de 32GB (no expandible) y 2GB de RAM. Resistente
+							a las salpicaduras de agua, de acuerdo a la clasificación IP67 según la norma IEC 60529 (ver indicaciones en el manual
+							de uso antes de sumergirlo). Sensor identificador de huellas digitales. Bluetooth, Wi-Fi, GPS, barómetro, NFC.Color
+							sujeto a disponibilidad de inventario (Puede llegar en color: Gold Rose, Gold, Silver, Mate Black).*Imagen únicamente
+							de referencia Este premio se entregará al participante que obtenga el mayor número de globos explotados en el juego
+							“Actualiza tus datos en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a> y gana premios”.
+						</li>
+						<br>
+						<li>
+							<strong>
+								<u>1.000 paquetes de 5.000* puntos Somos cada uno:</u>
+							</strong>
+							Carga de 5.000 puntos a la cuenta en el programa Somos del Grupo EPM de cada cliente ganador. El cliente podrá redimir los
+							puntos Somos en: pagar parte de la factura de servicios públicos, abonar a la cuota del Crédito Somos, abonar a la
+							cuota de Crédito con Destinación Específica de EPM de conversión a GNV, tanquear gas natural vehicular (GNV) en las
+							estaciones de servicios (EDS) de EPM, redimir productos de los Aliados Comerciales, hacer recargas de la Tarjeta Cívica
+							Personal y redimir productos del Catálogo de premios del programa. Este premio se entregará a los participantes que
+							obtengan mayor número de globos explotados entre el puesto 2 al puesto 1.001 en el juego “Actualiza tus datos en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a>
+							y gana premios”.
+						</li>
+					</ol>
+					<h3>Mecanismo de participación</h3>
+					<ul>
+						<li>Se enviará un sms únicamente a los clientes que en la Base de Datos del programa Somos del Grupo EPM no tengan un correo
+							electrónico registrado o este sea invalido, invitándolos a actualizar sus datos y a jugar</li>
+						<li>El cliente debe iniciar sesión con usuario y contraseña en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a></li>
+						<li>Hacer clic en “Tu cuenta” luego en “Mi Cuenta” y en “Actualiza tus datos”</li>
+						<li>Debe verificar que sus datos estén correctos, tener un correo electrónico valido y permitir recibir información del
+							programa Somos del Grupo EPM</li>
+						<li>Dar clic en “Confirmar”</li>
+						<li>Una vez dé clic en “Confirmar” le llegará un correo electrónico con el link del juego “Actualiza tus datos en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a>
+							y gana premios”, únicamente llegará el Link por este medio, por lo tanto, el cliente debe garantizar un correo electrónico
+							valido, de lo contrario no podrá jugar</li>
+						<li>El link del juego es único por participante, no es válido si se comparte esta información con otra persona. El juego
+							consiste en explotar la mayor cantidad de globos. El ranking de los jugadores estará disponible en el desarrollo del
+							juego y este se actualizará cada 5 segundos</li>
+						<li>Los ganadores serán los que al 25 de octubre de 2017 a las 11:59 p.m. queden registrados como los participantes con
+							más número de globos explotados, en caso de empate se escogerá al cliente que obtuvo un menor tiempo</li>
+						<li>A los ganadores de los paquetes de 5.000 puntos Somos se les notificará por medio de mail y sms, el viernes 27 de octubre
+							de 2017 y al ganador del iPhone se le notificará por medio de mail, sms y vía telefónica. Si después de 3 llamadas
+							el cliente no se logra contactar y no se ha manifestado en la línea 44 44 800 hasta el martes 31 de octubre a las
+							5:00 pm, se continuará con la selección del siguiente ganador que haya explotado el mayor número de globos en el juego
+							y así sucesivamente</li>
+					</ul>
+					<h3>Selección de ganadores:</h3>
+					Al momento de seleccionar los 1001 ganadores, se revisará, que los participantes estén inscritos al programa, hayan actualizado
+					sus datos personales, que estos sean veraces, que el correo electrónico sea válido y todo lo que sea necesario para
+					garantizar la información real del cliente; si al revisar que los 1001 participantes con mayor número de globos explotados,
+					hay alguno o algunos que no cumplen con estos requisitos, se procederá a escoger los participantes necesarios de forma
+					descendente en el mismo ranking hasta lograr los 1.001 ganadores.
+					<h3>Entrega de premios:</h3>
+					<ul>
+						<li>Los 1.000 paquetes de 5.000 puntos Somos, que se entregan del puesto 2 al puesto 1.001, se cargarán a la cuenta en
+							el programa Somos del Grupo EPM de los clientes ganadores, para poder redimir los puntos aplican las reglas de redención
+							del programa Somos del Grupo EPM publicadas en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a></li>
+						<li>El IPhone 7 se entrega al cliente con mayor número de globos explotados en el juego, el día miércoles 1 de noviembre
+							de 2017 en el edificio EPM, previa coordinación con el ganador, por lo cual es posible que la fecha y hora de entrega
+							se reprogramé</li>
+					</ul>
+					Se publicarán los ganadores en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a> y en la línea 44 44 80.
+					<h3>Manejo de Información de los Participantes:</h3>
+					Al proporcionar sus Datos Personales, el Participante está autorizando a EPM para realizar el tratamiento de sus Datos Personales
+					de acuerdo con las finalidades establecidas en las Políticas de Tratamiento de Datos Personales del programa Somos y
+					de EPM, las cuales se encuentra en el siguiente link <a href="https://www.epm.com.co" target="_blank">www.epm.com.co</a> y en <a href="https://www.somosgrupoepm.com" target="_blank">www.somosgrupoepm.com</a>. En razón a lo anterior,
+					se entenderá que el participante conoce y acepta los términos de tratamiento de sus Datos Personales por parte de EPM,
+					conforme con la Política de Tratamiento de Datos Personales que encontrará en los links informados anteriormente.
+					<br>
+					<br> El Participante es el único responsable por el manejo de su información personal inscrita en la Página Web. Así mismo,
+					los Participantes desisten a favor de EPM del derecho a reclamar judicial o extrajudicialmente, en cualquier momento
+					y ante cualquier jurisdicción, por el uso legal que se haga de los contenidos, los mensajes o la información enviada
+					por el Participante.
+					<h3>Condiciones</h3>
+					<h3>Por parte de EPM:</h3>
+					EPM podrá pronunciarse sobre aquellas situaciones no previstas en este reglamento a través de los mecanismos que tiene dispuestos
+					para la comunicación con los clientes.
+					<br>
+					<br> EPM no asumirá ninguna responsabilidad por el incumplimiento de sus obligaciones, cuando tal incumplimiento total o
+					parcial se produzca por causas o circunstancias constitutivas de fuerza mayor o caso fortuito, calificadas de conformidad
+					con la Ley.
+					<br>
+					<br> Se descalificará a cualquier cliente que actúe inapropiadamente conforme a los procedimientos de la actividad, o no
+					cumpla estos términos y condiciones. EPM podrá igualmente iniciar acciones legales contra las actividades fraudulentas
+					detectadas de acuerdo a lo estipulado por las leyes colombianas.
+					<br>
+					<br> EPM no se hace responsable por pérdidas o daños al producto por usos inadecuados.
+					<h3>Por parte del participante:</h3>
+					Los ganadores de los premios no podrán cambiar el premio por dinero en efectivo.
+					<br>
+					<br> Los participantes y ganadores de los premios autorizan a EPM a publicar los nombres completos, identificaciones y registro
+					fotográfico con el fin de divulgar el resultado de la actividad promocional. Esta autorización no genera compensación
+					o pago a los ganadores, y constará de manera expresa en el acta de entrega del premio.
+					<br>
+					<br> Cualquier gasto adicional no mencionado ni especificado será de exclusiva y total responsabilidad del ganador.
+				</div>
+				<button class="btnClose" type="button">&#x2715;</button>
+			</div>
+		</div>
+	</div>
+
 </body>
+
+<footer>
+	<script>
+		var data = {
+			start: function () {
+				console.log("Inicio");
+			},
+			end: function (gameData) {
+				console.log(gameData);
+			},
+			name: "Sebastian Vasquez",
+			path: ""
+		}
+		var game = new entry.Game(data);
+	</script>
+</footer>
+
 </html>

@@ -4,41 +4,70 @@
 import 'pixi';
 import 'p2';
 import * as Phaser from 'phaser';
-import Config from './config';
 
-class SimpleGame {
+import { Boot } from './states/boot';
+import { Preloader } from './states/preloader';
+import { MainMenu } from './states/mainmenu';
+import { Level1 } from './states/level1';
+
+import { Utils } from './classes/utils';
+
+export class Game extends Phaser.Game {
+
   game: Phaser.Game;
-  logo: Phaser.Sprite;
-  cursors: Phaser.CursorKeys;
+  public static data;
 
-  constructor() {
-    this.game = new Phaser.Game(Config.width, Config.height, Phaser.AUTO, "content", this);
+  constructor(data) {
+
+    super(1280, 960, Phaser.AUTO, 'content', null);
+
+    this.state.add('Boot', Boot, false);
+    this.state.add('Preloader', Preloader, false);
+    this.state.add('MainMenu', MainMenu, false);
+    this.state.add('Level1', Level1, false);
+
+    Utils.endCb = data.end;
+    Utils.startCb = data.start;
+    Utils.playerName = data.name;
+    Utils.path = data.path;
+
+    this.state.start('Boot');
+
+    var modInst = document.getElementById("instructions");
+    var modMenu = document.getElementById("menu");
+    var modTyc = document.getElementById("tyc");
+    var modTop = document.getElementById("top");
+
+    var initGame = Array.prototype.slice.call(document.getElementsByClassName("btnInit"));
+    initGame.forEach(element => {
+      element.onclick = () => {
+        this.state.start('Preloader', true, false);
+        modMenu.style.display = "none";
+        modInst.style.display = "none";
+        Utils.goFullScreen(this);
+      }
+    });
+
+    var tyc = Array.prototype.slice.call(document.getElementsByClassName("terms"));
+    tyc.forEach(element => {
+      element.onclick = () => {
+        modTyc.style.display = "initial";
+      }
+    });
+
+    var inst = document.getElementById("btnGuide");
+    inst.onclick = () => {
+      modInst.style.display = "initial";
+      modMenu.style.display = "none";
+    }
+
+    var close = Array.prototype.slice.call(document.getElementsByClassName("btnClose"));
+    close.forEach(element => {
+      element.onclick = () => {
+        element.parentElement.style.display = "none";
+      }
+    });
   }
 
-  preload() {
-    this.game.load.image("logo", "./assets/images/mushroom2.png");
-  }
 
-  create() {
-    this.logo = this.game.add.sprite(this.game.world.centerX, this.game.world.centerY, "logo");
-    this.logo.anchor.setTo(0.5, 0.5);
-    this.cursors = this.game.input.keyboard.createCursorKeys();
-  }
-
-  update() {
-    this.game.input.update();
-
-    if (this.cursors.down.isDown)
-      this.logo.position.y += 10;
-    if (this.cursors.up.isDown)
-      this.logo.position.y -= 10;
-    if (this.cursors.left.isDown)
-      this.logo.position.x -= 10;
-    if (this.cursors.right.isDown)
-      this.logo.position.x += 10;
-  }
 }
-
-window.onload = () => {
-  const game = new SimpleGame();
-};

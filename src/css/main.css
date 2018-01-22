@@ -1,0 +1,355 @@
+@font-face {
+  font-family: 'VAG-Rounded-Bold';
+  src: url("../assets/fonts/VAG-Rounded-Bold/VAG-Rounded-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/VAG-Rounded-Bold/VAG-Rounded-Bold.woff") format("woff"), url("../assets/fonts/VAG-Rounded-Bold/VAG-Rounded-Bold.ttf") format("truetype"), url("../assets/fonts/VAG-Rounded-Bold/VAG-Rounded-Bold.svg#VAG-Rounded-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAGRounded-Light';
+  src: url("../assets/fonts/VAGRounded-Light/VAGRounded-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/VAGRounded-Light/VAGRounded-Light.woff") format("woff"), url("../assets/fonts/VAGRounded-Light/VAGRounded-Light.ttf") format("truetype"), url("../assets/fonts/VAGRounded-Light/VAGRounded-Light.svg#VAGRounded-Light") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VAGRound';
+  src: url("../assets/fonts/VAGRound/VAGRound.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/VAGRound/VAGRound.woff") format("woff"), url("../assets/fonts/VAGRound/VAGRound.ttf") format("truetype"), url("../assets/fonts/VAGRound/VAGRound.svg#VAGRound") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url("../assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.otf") format("opentype"), url("../assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.woff") format("woff"), url("../assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.ttf") format("truetype"), url("../assets/fonts/SourceSansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+#content{
+  color: #666666;
+}
+
+.center{
+  text-align: center;
+}
+
+#menu{
+  border-radius: 50px;
+  box-shadow: 0px 0px 25px 0px gainsboro;
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  padding: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'VAGRounded-Light';
+  min-width: 285px;
+  max-width: 550px;
+}
+
+.decoration{
+  position: absolute;
+  top: -25%;
+  left: -20%;
+}
+
+#menu img{
+  display: block;
+  margin: auto;
+}
+
+#top img{
+  display: block;
+  margin: auto;
+}
+
+button{
+  margin: 10px;
+}
+
+#menu .message{
+  line-height: 26px;
+  font-size: 20px;
+  font-family: 'SourceSansPro-Regular';
+  margin: 20px;
+}
+
+#menu button{
+  border-radius: 50px;
+  height: 60px;
+  width: 60%;
+  color: #ffffff;
+  border: none;
+  font-size: 22px;
+  font-family: 'VAG-Rounded-Bold';
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+#instructions{
+  border-radius: 50px;
+  box-shadow: 0px 0px 25px 0px gainsboro;
+  width: 40%;
+  padding: 40px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'VAGRounded-Light';
+  min-width: 285px;
+  max-width: 550px;
+}
+
+#instructions img{
+  display: block;
+  margin: auto;
+}
+
+#tyc .message{
+  height: 80%;
+  overflow: auto;
+}
+
+#instructions .message{
+  line-height: 26px;
+  font-size: 20px;
+  font-family: 'SourceSansPro-Regular';
+  margin: 20px;
+}
+
+#instructions button{
+  border-radius: 50px;
+  height: 60px;
+  width: 60%;
+  color: #ffffff;
+  margin: 10px 40px;
+  border: none;
+  font-size: 22px;
+  font-family: 'VAG-Rounded-Bold';
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+}
+
+.terms{
+  background-color: #AFB42B;
+}
+
+#btnGuide{
+  background-color: #acd755;
+}
+
+.btnInit{
+  background-color: #91b549;
+}
+
+#score{
+  border-radius: 50px;
+  box-shadow: 0px 0px 25px 0px gainsboro;
+  width: 40%;
+  position: absolute;
+  padding: 40px;
+  top: 30%;
+  left: 30%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'VAGRounded-Light';
+  min-width: 285px;
+  max-width: 550px;
+}
+
+#score button{
+  border-radius: 50px;
+  height: 60px;
+  padding: 0 12px 0 12px;
+  color: #ffffff;
+  margin: 12px 5px 12px 5px;
+  border: none;
+  font-size: 20px;
+  font-family: 'VAG-Rounded-Bold';
+}
+
+#score #btnTop{
+  background-color: #acd755;
+}
+
+#score #btnRestart{
+  background-color: #91b549;
+}
+
+#top{
+  border-radius: 50px;
+  box-shadow: 0px 0px 25px 0px gainsboro;
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  padding: 40px;
+  top: 30%;
+  left: 30%;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'VAGRounded-Light';
+  min-width: 285px;
+  max-width: 550px;
+}
+
+#top button{
+  border-radius: 50px;
+  height: 60px;
+  background-color: #6C9C0C;
+  color: #ffffff;
+  margin: 20px 0 20px 0;
+  border: none;
+  font-size: 20px;
+  font-family: 'VAG-Rounded-Bold';
+}
+
+#top .win{
+  background-color: grey;
+  color: #ffffff;
+}
+
+#top .win td:first-child{
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+#top .win td:last-child{
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#top .scroll{
+  overflow: auto;
+  width: 100%;
+  height: 75%;
+  text-align: left;
+}
+
+#score table{
+  margin: 20px 0 20px 0;
+  width: 100%;
+  text-align: left;
+}
+
+#top table{
+  margin: 20px 0 20px 0;
+  width: 100%;
+  text-align: left;
+}
+
+#top table td, th{
+  padding: 8px 16px 8px 16px;
+  border: 0px;
+}
+
+#score p{
+  font-size: 30px;
+  font-family: 'VAG-Rounded-Bold';
+  color: #91C748;
+  margin: 5px;
+}
+
+#score .player td{
+  font-size: 24px;
+  font-family: 'VAG-Rounded-Bold';
+  color: #00823E;
+  padding: 0px;
+}
+
+#score .player td, th{
+  padding: 0 20px 0 20px;
+}
+
+#score h1{
+  font-family: 'VAG-Rounded-Bold';
+  font-size: 96px;
+  color: #00823E;
+  margin: 20px;
+}
+
+#top h2{
+  font-family: 'VAG-Rounded-Bold';
+  font-size: 24px;
+  color: #00823E;
+  margin: 20px 0;
+}
+
+#tyc h3{
+  color: #91b549;
+}
+
+#tyc{
+  border-radius: 50px;
+  box-shadow: 0px 0px 25px 0px gainsboro;
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  padding: 30px 30px 50px 30px;
+  top: 30%;
+  left: 30%;
+  background-color: #ffffff;
+  font-family: 'SourceSansPro-Regular';
+  min-width: 285px;
+  max-width: 550px;
+}
+
+#tyc h1{
+  font-family: 'SourceSansPro-Regular';
+  font-size: 24px;
+}
+
+#top .btnClose{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50px;
+  background-color: #6C9C0C;
+  border: none;
+  min-width: 32px;
+  max-height: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#tyc .btnClose{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50px;
+  background-color: #6C9C0C;
+  border: none;
+  min-width: 32px;
+  min-height: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  #top, #tyc, #instructions, #menu, #score{
+    width: 100%;
+    height: 100%;
+    top: 40px;
+    left: 0px;
+    z-index: 9;
+    padding: 20px 5px;
+  }
+
+  #top .scroll{
+    height: 70%;
+    width: auto;
+  }
+
+  #top h1{
+    font-size: 36px;
+  }
+  #top h2{
+    font-size: 18px;
+  }
+}

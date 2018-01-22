@@ -15,13 +15,19 @@ module.exports = {
     pathInfo: true,
     filename: '[name].bundle.js',
     path: path.resolve('./dist'),
-    publicPath: '/'
+    publicPath: '',
+    libraryTarget: 'var',
+    library: 'entry'
   },
   plugins: [
     new CopyWebpackPlugin([
       {
         from: './src/assets',
         to:'./assets'
+      },
+      {
+        from: './src/css',
+        to: './css'
       }
     ]),
     new HtmlWebpackPlugin({
